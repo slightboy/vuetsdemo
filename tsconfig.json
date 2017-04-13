@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "moduleResolution": "node",
+        "target": "es5",
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "strictNullChecks": true,
+        "removeComments": true,
+        "lib": ["es2017", "dom"]
+    },
+  "include": [
+    "./src/**/*.ts"
+  ],
+  "compileOnSave": false
+}
