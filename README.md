@@ -4,7 +4,13 @@
 + [NPM](https://www.npmjs.com) [Docs](https://docs.npmjs.com/)
 + [TypeScript](http://www.typescriptlang.org) [Docs](http://www.typescriptlang.org/docs/tutorial.html)
 + [Vue.js](https://vuejs.org/) | [CN](https://cn.vuejs.org/) [Docs](https://vuejs.org/v2/guide/) [Examples](https://vuejs.org/v2/examples/)
+
+
+## 工具
+
 + [VSCode](https://code.visualstudio.com) [Docs](https://code.visualstudio.com/docs)
++ [Zeal](https://zealdocs.org)
++ [ALMRUN](https://github.com/chenall/almrun)
 
 ## 环境配置
 
