@@ -39,6 +39,10 @@ module.exports = {
         options: vueLoaderConfig
       },
       {
+        test: /\.htm$/,
+        loader: 'string-loader'
+      },
+      {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
