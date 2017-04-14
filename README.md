@@ -4,11 +4,12 @@
 + [NPM](https://www.npmjs.com) [Docs](https://docs.npmjs.com/)
 + [TypeScript](http://www.typescriptlang.org) [Docs](http://www.typescriptlang.org/docs/tutorial.html)
 + [Vue.js](https://vuejs.org/) | [CN](https://cn.vuejs.org/) [Docs](https://vuejs.org/v2/guide/) [Examples](https://vuejs.org/v2/examples/)
-
++ [Element](http://element.eleme.io)
 
 ## 工具
 
 + [VSCode](https://code.visualstudio.com) [Docs](https://code.visualstudio.com/docs)
++ [vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur) Code Vue 语法高亮插件
 + [Zeal](https://zealdocs.org)
 + [ALMRUN](https://github.com/chenall/almrun)
 
@@ -35,6 +36,10 @@ $ npm i
 $ npm i vue-class-component ts-loader -D
 ```
 
+安装 Element UI 包
+```bash
+$ npm i element-ui -S
+```
 
 
 修改 webpack 配置
