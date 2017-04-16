@@ -18,7 +18,7 @@ export default class Todos extends Vue {
 
 	checkeChange (value) {
 		this.checkAll = this.todos.length === value.length;
-		  this.isIndeterminate = value.length > 0 && value.length < this.todos.length;
+		this.isIndeterminate = value.length !== 0 && !this.checkAll;
 	}
 
 	add () {
