@@ -1,11 +1,11 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import Todos from '@/components/todos.vue';
+import lesson4 from '@/lesson/4/index.vue';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
-	{ path: '/', component: Todos }
+	{ path: '/4', component: lesson4 }
   ]
 });

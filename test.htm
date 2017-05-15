@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+<body>
+
+<div id="app">
+  <el-tabs v-model="category" type="card">
+    <el-tab-pane label="用户管理" name="first"></el-tab-pane>
+    <el-tab-pane label="youku" name="youku"></el-tab-pane>
+    <el-tab-pane label="角色管理" name="third"></el-tab-pane>
+    <el-tab-pane label="定时任务补偿" name="fourth"></el-tab-pane>
+  </el-tabs>
+<el-input v-model="q" placeholder="搜索" style="width:600px" />
+<p> {{ q }} </p>
+<p v-if="category = 'youku'"><a :href="youku" target="_blank">youku</a></p>
+
+
+
+<hr />
+
+
+</div>
+
+<script>
+
+let vm  = new Vue({
+	el: '#app',
+  computed: {
+    youku () {
+      if (this.q.startsWith('http://v.youku.com')) return 'https://api.47ks.com/webcloud/?v='+ this.q
+      return false
+    }
+  },
+  methods: {
+    handleClick(tab) {
+      console.log(tab)
+      console.log(this.activeName2);
+    }
+  },
+	data: {
+		q: '',
+    category: 'first'
+ }
+})
+
+</script>
+</body>
+</html>

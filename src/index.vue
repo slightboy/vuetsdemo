@@ -19,10 +19,14 @@
 </el-row>
 
 <el-row class="content">
-  <el-col :span="4"><div class="grid-content bg-purple"><router-link to="/todos">todos</router-link></div></el-col>
+  <el-col :span="4">
+	  <div class="grid-content bg-purple">
+	  <router-link to="/lesson3">3.Template Syntax 模板语法</router-link>
+	  
+	  </div>
+  </el-col>
   <el-col :span="20"><div class="grid-content bg-purple-light">
   <router-view></router-view>
-  
   </div></el-col>
 </el-row>
 
