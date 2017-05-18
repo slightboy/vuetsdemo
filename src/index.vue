@@ -1,6 +1,8 @@
 <template>
 
   <div id="app">
+<loading :loading="loading" />
+
 <el-row>
   <el-col :span="24"><div class="grid-content bg-purple-dark">
 	
@@ -22,7 +24,6 @@
   <el-col :span="4">
 	  <div class="grid-content bg-purple">
 	  <router-link to="/lesson3">3.Template Syntax 模板语法</router-link>
-	  
 	  </div>
   </el-col>
   <el-col :span="20"><div class="grid-content bg-purple-light">

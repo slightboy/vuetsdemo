@@ -1,10 +1,12 @@
 <template>
-<div v-show="loading" class="loading">
-      <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+<div class="farme" v-if="loading">
+	<div class="loading">
+		<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+	</div>
 </div>
 </template>
 
@@ -14,11 +16,27 @@ export default App
 </script>
 
 <style>
+.farme {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: rgba(230, 233, 236, 0.8);
+    cursor: wait;
+    opacity: 1;
+}
+
 .loading {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto;
+ top: 20%;
+    left: 50%;
+	box-sizing: content-box !important;
 	margin-top:100px;
+	z-index: 1001;
 	position:absolute;
 	text-align: center;
 }
